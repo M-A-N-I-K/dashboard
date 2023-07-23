@@ -2,7 +2,7 @@ import React from 'react'
 
 const InfoBox = () => {
     return (
-        <div className="h-[80vh] sm:h-[100vh] p-5 m-0 sm:ml-14 w-[100vw] sm:w-[30vw] bg-gray-50 shadow-lg rounded-sm border border-gray-200">
+        <div className="h-[100vh] p-5 m-0 sm:ml-14 w-[100vw] sm:w-[30vw] bg-gray-50 shadow-lg rounded-sm border border-gray-200">
             <div className="flex items-center px-8">
                 <img className="w-14 h-14 rounded-full" src="https://preview.cruip.com/mosaic/images/user-64-01.jpg" alt="Rounded avatar"></img>
                 <div className="mx-4">
