@@ -2,7 +2,7 @@ import React from 'react'
 
 const InfoBox = () => {
     return (
-        <div className="h-[100vh] p-5 ml-14 w-[30vw] bg-gray-50 shadow-lg rounded-sm border border-gray-200">
+        <div className="h-[80vh] sm:h-[100vh] p-5 m-0 sm:ml-14 w-[100vw] sm:w-[30vw] bg-gray-50 shadow-lg rounded-sm border border-gray-200">
             <div className="flex items-center px-8">
                 <img className="w-14 h-14 rounded-full" src="https://preview.cruip.com/mosaic/images/user-64-01.jpg" alt="Rounded avatar"></img>
                 <div className="mx-4">
@@ -14,13 +14,19 @@ const InfoBox = () => {
             </div>
             <div className='flex px-8 p-4 font-bold text-md flex-col'>
                 <p className='font-bold text-black'>Today</p>
-                <h1 className='font-bold text-2xl mt-3'>$19,892</h1>
+                <h1 className='font-bold text-3xl sm:text-2xl mt-3'>$19,892</h1>
                 <p className='text-gray-600 font-normal text-xs'>Account Balance</p>
-                <h6 className='mt-2'>$4,000</h6>
-                <p className='text-gray-600 font-normal text-xs'>Year-to-date-contributions</p>
-                <h6 className='mt-2'>$1,982</h6>
-                <p className='text-gray-600 font-normal text-xs'>Total Interest</p>
-                <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" className="text-white bg-indigo-600 hover:bg-indigo-700 w-[40%] font-medium mt-4 rounded-full text-xs px-4 py-2.5 text-center inline-flex items-center justify-center" type="button"><p>I want to</p>
+                <div className='flex sm:flex-col justify-between'>
+                    <div className='flex flex-col'>
+                        <h6 className='mt-2'>$4,000</h6>
+                        <p className='text-gray-600 font-normal text-xs'>Year-to-date<span className='hidden sm:inline-flex'>-contributions</span></p>
+                    </div>
+                    <div className='flex flex-col'>
+                        <h6 className='mt-2'>$1,982</h6>
+                        <p className='text-gray-600 font-normal text-xs'>Total Interest</p>
+                    </div>
+                </div>
+                <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" className="text-white bg-indigo-600 hover:bg-indigo-700 w-full sm:w-[60%] font-medium mt-4 rounded-lg text-xs px-4 py-2.5 sm:py-3 text-center inline-flex items-center justify-center" type="button"><p>I want to</p>
                     <svg className="w-2.5 h-2.5 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                         <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 1 4 4 4-4" />
                     </svg>

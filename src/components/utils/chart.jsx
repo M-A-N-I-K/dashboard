@@ -16,7 +16,7 @@ export default function ChartSection() {
                 label: "Employer : 73,500k",
                 data: Data2.map((data) => data.contribution),
                 backgroundColor: [
-                    "#03254c",
+                    "#182e8b",
                 ],
                 barPercentage: 0.5,
                 barThickness: 14,
@@ -25,7 +25,7 @@ export default function ChartSection() {
                 label: "Employee : 52,500k",
                 data: Data3.map((data) => data.contribution),
                 backgroundColor: [
-                    "#1167b1",
+                    "#3855cd",
                 ],
                 barPercentage: 0.5,
                 barThickness: 14,
@@ -34,7 +34,7 @@ export default function ChartSection() {
                 label: "Total Interest : 243,313k",
                 data: Data.map((data) => data.contribution),
                 backgroundColor: [
-                    "#2a9df4",
+                    "#96bffe",
                 ],
                 barPercentage: 0.5,
                 barThickness: 14,
@@ -43,8 +43,8 @@ export default function ChartSection() {
     });
 
     return (
-        <div className="Chart">
-            <BarChart chartData={chartData} />
+        <div className="w-[80vw] sm:w-[35vw]">
+            <BarChart chartData={chartData} height="200px" width="200px" options={{ maintainAspectRatio: false }} />
         </div>
     );
 }
